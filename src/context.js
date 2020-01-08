@@ -17,7 +17,8 @@ const TodosContext = React.createContext({
       text: 'Take out the trash',
       complete: true
     }
-  ]
+  ],
+  currentTodo: []
 })
 
 export default TodosContext
