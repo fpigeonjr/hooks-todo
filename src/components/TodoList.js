@@ -19,7 +19,7 @@ export default function TodoList() {
             <span
               onDoubleClick={async () => {
                 const response = await axios.patch(
-                  `https://todos-api-nuquyjkqpx.now.sh/todos/${todo.id}`,
+                  `https://hooks-api-8wz913j8d.now.sh/todos/${todo.id}`,
                   {
                     complete: !todo.complete
                   }
@@ -45,7 +45,7 @@ export default function TodoList() {
             <button
               onClick={async () => {
                 await axios.delete(
-                  `https://todos-api-nuquyjkqpx.now.sh/todos/${todo.id}`
+                  `https://hooks-api-8wz913j8d.now.sh/todos/${todo.id}`
                 );
                 dispatch({ type: "REMOVE_TODO", payload: todo });
               }}
